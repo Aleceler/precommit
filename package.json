@@ -11,6 +11,18 @@
     "preview": "vite preview",
     "test": "jest"
   },
+  "lint-staged": {
+    "*.js": [
+      "eslint --fix",
+      "prettier --write",
+      "test"
+    ],
+    "*.ts": [
+      "eslint --fix",
+      "prettier --write",
+      "test"
+    ]
+  },
   "dependencies": {
     "@typescript-eslint/eslint-plugin": "^8.6.0",
     "eslint-define-config": "^2.1.0",
